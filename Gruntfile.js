@@ -14,9 +14,10 @@ module.exports = function(grunt) {
                     specs: 'test/*.js',
                     template: require('grunt-template-jasmine-requirejs'),
                     templateOptions: {
-                        paths: {
-                            bower_components: '/bower_components',
-                            modules: '/assets/js/modules'
+                        requireConfig: {
+                            paths: {
+                                jquery: 'public/bower_components/jquery/dist/jquery.min'
+                            }
                         }
                     }
                 }
