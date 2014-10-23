@@ -10,9 +10,7 @@ require([
     "bower_components/socket.io-client/socket.io",
     "modules/field"
     ], function($, io, field) {
+        field.init();
 
-    console.log('start');
-    console.log('field', field.get);
-
-    var socket = io();
+//    var socket = io();
 });

@@ -1,3 +1,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     }
+
+.field {
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    line-height: 0;
+    padding-left: 1px;
+    }
+
+.field_cell {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: -1px;
+    margin-top: -1px;
+    border: solid 1px red;
+    box-sizing: border-box;
+    }
