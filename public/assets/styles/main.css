@@ -5,17 +5,43 @@ body {
 .field {
     display: inline-block;
     margin: 20px;
-    width: 200px;
+    width: 190px;
+    overflow: hidden;
     line-height: 0;
     padding-left: 1px;
+    border-top: solid 1px grey;
+    }
+
+.field.__ready{
+    background: #E1FFE1;
     }
 
 .field_cell {
     display: inline-block;
     width: 20px;
     height: 20px;
+    overflow: hidden;
+    position: relative;
     margin-left: -1px;
     margin-top: -1px;
-    border: solid 1px red;
+    border: solid 1px grey;
     box-sizing: border-box;
+    }
+
+.field_cell.__has-ship {
+    background: grey;
+    }
+
+
+.field_cell.__is-hit:before {
+    content: '•';
+    position: absolute;
+    font-size: 24px;
+    font-weight: 700;
+    left: 4px;
+    top: 10px;
+    }
+
+.field_cell.__has-ship.__is-hit {
+    background: red;
     }

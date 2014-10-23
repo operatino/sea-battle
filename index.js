@@ -8,7 +8,11 @@ app.use(require('compression')());
 app.use(express.static('./public'));
 
 io.on('connection', function(socket){
-  console.log('a user connected');
+    console.log('a user connected');
+
+    socket.on('playerReady', function () {
+        console.log('playerReady');
+    });
 });
 
 http.listen(3000, function(){

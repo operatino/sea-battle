@@ -4,12 +4,14 @@
     <title>Sea-battle</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/styles/main.css">
-    <script data-main="assets/js/main" src="bower_components/requirejs/require.js"></script>
 </head>
 <body>
     <div class="app">
         <div class="field js-field-my"></div>
         <div class="field js-field-enemy"></div>
+        <input type="button" value="Ready" disabled class="js-ready">
+        <input type="button" value="Set all ships" class="js-set-all-ships">
     </div>
+    <script data-main="assets/js/main" src="bower_components/requirejs/require.js"></script>
 </body>
 </html>
