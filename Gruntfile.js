@@ -32,6 +32,6 @@ module.exports = function(grunt) {
     *
     * */
 
-    grunt.registerTask('watch-all', ['update','watch']);
+    grunt.registerTask('test', ['jasmine']);
 
 };
